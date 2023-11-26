@@ -1,0 +1,11 @@
+{
+  "startDate":"2022-12-07",
+  "endDate":"2022-12-11",
+
+  "user":{
+    "username":"user1"
+  },
+  "car":{
+    "id" : "1"
+  }
+}

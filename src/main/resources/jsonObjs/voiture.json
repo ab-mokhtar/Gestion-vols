@@ -1,0 +1,12 @@
+{
+  "model": "Grand Marquis",
+  "id": 1,
+  "brand": "Porsche",
+  "serie": "239 tun 2182",
+  "fuelType": "gas",
+  "gearType": "automatic",
+  "dayPrice": 202.77,
+  "imageUrl": "assets/images/cars/Porsche.png",
+  "createdAt": "2022-12-01T11:26:44",
+  "updatedAt": "2022-12-01T11:26:44"
+}
