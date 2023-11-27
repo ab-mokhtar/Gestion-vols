@@ -29,4 +29,5 @@ public class FlightDetailsService {
     public FlightDetails findById(Long id){
         return flightDetailsRepository.findById(id).orElseThrow();
     }
+     public FlightDetails update(FlightDetails flightDetails){return flightDetailsRepository.save(flightDetails);}
 }
