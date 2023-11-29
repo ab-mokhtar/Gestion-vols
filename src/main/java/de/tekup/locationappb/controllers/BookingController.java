@@ -6,6 +6,8 @@ import de.tekup.locationappb.services.BookingService;
 import de.tekup.locationappb.services.FlightDetailsService;
 import de.tekup.locationappb.services.UserService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
@@ -48,5 +50,11 @@ public class BookingController {
     @DeleteMapping("/{id}")
     public void deleteBooking(@PathVariable Long id) {
         bookingService.delete(id);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Booking> update(@RequestBody Booking booking){
+        Booking booking1 = bookingService.update(booking);
+        return new ResponseEntity<>(booking1, HttpStatus.OK);
     }
 }

@@ -25,4 +25,5 @@ public class BookingService {
     public Booking add(Booking booking){
         return bookingRepository.save(booking);
     }
+    public Booking update(Booking booking){return bookingRepository.save(booking);}
 }

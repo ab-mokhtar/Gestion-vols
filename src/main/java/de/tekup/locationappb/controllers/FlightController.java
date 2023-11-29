@@ -50,4 +50,11 @@ public class FlightController {
         FlightDetails deletedFlight = flightDetailsService.delete(id);
         return new ResponseEntity<>(deletedFlight, HttpStatus.OK);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<FlightDetails> update(@RequestBody FlightDetails flightDetails){
+        FlightDetails fly = flightDetailsService.update(flightDetails);
+        return new ResponseEntity<>(fly, HttpStatus.OK);
+    }
+
 }
