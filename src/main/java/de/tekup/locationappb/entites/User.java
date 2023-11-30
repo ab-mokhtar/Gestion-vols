@@ -18,6 +18,8 @@ public class User {
     private String userPassword;
     private String email;
     @OneToMany
+    private List<Issue>issues;
+    @OneToMany
     private List<Booking>bookings;
 
     public String getEmail() {

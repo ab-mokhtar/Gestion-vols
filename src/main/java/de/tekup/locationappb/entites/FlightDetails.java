@@ -23,9 +23,9 @@ public class FlightDetails {
     private String departureTime;
     private LocalDate returnDate;
     private String returnTime;
-    private boolean isEconomyClass;
-    private boolean isBusinessClass;
-    private boolean isFirstClass;
+    private boolean economyClass;
+    private boolean businessClass;
+    private boolean firstClass;
     private int economyClassSeats;
     private int ResrvedeconomyClassSeats;
     private double economyClassTicketPrice;
