@@ -1,5 +1,6 @@
 package de.tekup.locationappb.controllers;
 
+import de.tekup.locationappb.entites.Booking;
 import de.tekup.locationappb.entites.FlightDetails;
 import de.tekup.locationappb.entites.Issue;
 import de.tekup.locationappb.entites.User;
@@ -33,4 +34,9 @@ public class IssueController {
         List<Issue> issues = issueService.getAll();
         return new ResponseEntity<>(issues, HttpStatus.OK);
     }
+    @GetMapping("/user/{id}")
+    public List<Issue> getBookingByUserId(@PathVariable String id) {
+        return issueService.getByUserId(id);
+    }
+
 }

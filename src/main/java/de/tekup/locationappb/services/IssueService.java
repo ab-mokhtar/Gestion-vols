@@ -27,4 +27,5 @@ public class IssueService {
         return issueRepository.save(issue);
     }
     public Issue update(Issue issue){return issueRepository.save(issue);}
+    public List<Issue>getByUserId(String id){return issueRepository.findByUser_Username(id);}
 }

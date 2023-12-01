@@ -31,6 +31,11 @@ public class BookingController {
         return bookingService.getById(id);
     }
 
+    @GetMapping("/user/{id}")
+    public List<Booking> getBookingByUserId(@PathVariable String id) {
+        return bookingService.getByUserId(id);
+    }
+
 
 
     @PostMapping
